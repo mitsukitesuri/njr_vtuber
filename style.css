@@ -8,7 +8,9 @@ body {
       color: #333333;
       margin: 0;
       text-align: center;
+      list-style-position:center;
     }
+
 
     .header{
       background-color: #333333;
@@ -140,5 +142,34 @@ dl::after {
     display: block;
     clear: both;
 }
+
+ul {
+  list-style: none;
+  background-position: left center;
+}
   
-  
+a {
+  color:#FFFFFF;
+}
+
+.blue-line{
+  background-color: #7BC3D1;
+}
+
+.blue-line{
+  margin-bottom: 50px;
+  height: 5px;
+  width: 100px;
+  border: none;
+}
+
+.blue-line_2{
+  margin-bottom: 50px;
+  height: 7px;
+  width: 600px;
+  border: none;
+}
+
+.blue-line_2{
+  background-color: #7BC3D1;
+}
