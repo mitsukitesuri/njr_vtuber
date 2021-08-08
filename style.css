@@ -320,3 +320,7 @@ a {
 	transform: translateY(20px);
 	transition: all 1.3s 0s ease-out;
   }
+
+header{
+　position:fixed;
+}
