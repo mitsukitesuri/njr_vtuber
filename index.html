@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
 	<meta name=“viewport” content=“width=device-width, initial-scale=1, viewport-fit=cover”/>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,38 +22,38 @@
 	 </header>
 	</div>
 	<div class="top">
-		<h1>n junior high school vtuber project</h1>
-		<hr class="blue-line_2">
+		<h1 class="slide-bottom show">n junior high school vtuber project</h1>
+		<hr class="blue-line_2"class="slide-bottom show">
 	</div>
 	<hr>
 	<div class="about" id="about">
-        <h2>about</h1>
+        <h2 class="slide-bottom show">about</h1>
 			<hr class="blue-line">
-        <p>このプロジェクトはみんなでvtuberになってN中をvtuberの中学校にするプロジェクトです。<br>
+        <p class="slide-bottom show">このプロジェクトはみんなでvtuberになってN中をvtuberの中学校にするプロジェクトです。<br>
             vtuberの姿でN中の授業を受けたりN中等部のイベントに参加したりします。</p>
-        <h3>活動内容</h3>
-		<hr class="blue-line">
-        <ul>
-            <li>・N中等部vtuber学園プロジェクトの宣伝。</li>
+        <h class="slide-bottom show">活動内容</h3>
+		<hr class="blue-line" class="slide-bottom show">
+        <ul class="slide-bottom show">
+            <li>・N中頭部vtuber学園プロジェクトの宣伝。</li>
             <li>・サンプルvtuber作成。</li>
             <li>・Vtuberの姿でN中の授業を受ける。</li> 
 			<li>・N中内で自分が作ったvtuberを募集する。</li>
             <li>・それで集まったvtuberをWebsiteにまとめて紹介サイトを作る。</li>
             <li>・出来たWebsiteをN高等学校、S高等学校、N中等部に公開する。</li>
 		</ul>
-        <h3>目標</h3>
+        <h3 class="slide-bottom show">目標</h3>
 		<hr class="blue-line">
-        <ul>
+        <ul class="slide-bottom show">
             <li>Vtuberをより多くの人に興味を持ってもらう。</li>
             <li>N中等部をvtuberの学校にする。</li>
 		</ul>
     </div>
 	<hr>
 	<div class="member" id="member">
-		    <h1>member</h1>
+		    <h1 class="slide-bottom show">member</h1>
 			<hr class="blue-line">
-        <div class="pop-box">
-  <label for="popup-on"><label for="popup-on"><div class="btn-open"><img src="madoka.png" alt="" class="layer-img"></div></label><h1>桃夜 円(クリックして詳細を表示)</h1>
+        <div class="pop-box" class="slide-bottom show">
+  <label for="popup-on"><label for="popup-on"><div class="btn-open"><img src="madoka.png" alt="" class="layer-img" class="slide-bottom show"></div></label><h1>桃夜 円(クリックして詳細を表示)</h1>
   <input type="checkbox" id="popup-on">
   <div class="popup">
     <label for="popup-on" class="icon-close">×</label>
@@ -72,7 +73,7 @@
 	</div>
 		<hr>
 		<div class="NEWS" id="NEWS">
-			<h1>NEWS</h1>
+			<h1 class="slide-bottom show">NEWS</h1>
 			<hr class="blue-line">
 
 
@@ -123,6 +124,21 @@
 		<a href="#top">サイトトップへ</a>
 </div>
 		</div>
+		<script>
+			//フェードイン用のコードです
+			$(function(){
+				$(window).on('load scroll', function() {
+					$(".show").each(function() {
+						var winScroll = $(window).scrollTop();
+						var winHeight = $(window).height();
+						var scrollPos = winScroll + (winHeight * 0.9);
+						if($(this).offset().top < scrollPos) {
+							$(this).css({opacity: 1, transform: 'translate(0, 0)'});
+						}
+					});
+				});
+			});
+			</script>
   </body>
 
 </html>
