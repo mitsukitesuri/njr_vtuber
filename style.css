@@ -17,6 +17,7 @@ body {
       display: flex;
       justify-content: space-between;
       padding: 20px;
+      position: fixed;
     }
 
   
@@ -321,6 +322,3 @@ a {
 	transition: all 1.3s 0s ease-out;
   }
 
-header{
-　position:fixed;
-}
